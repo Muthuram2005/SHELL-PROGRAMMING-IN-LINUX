@@ -1,0 +1,10 @@
+echo enter the natural numbers: 
+read n 
+na=1 
+echo the numbers are: 
+while [ $n -ne 0 ]; do 
+echo $na 
+let na++ 
+#echo $na 
+let n-- 
+done 
