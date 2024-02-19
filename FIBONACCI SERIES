@@ -1,0 +1,13 @@
+read n 
+echo "Fibonacci Series" 
+f1=0 f2=1 echo -n "$f1 " 
+echo -n " $f2 " 
+i=2 
+while [ $i -lt $n ] 
+do 
+f3=`expr $f1 + $f2` 
+echo -n " $f3 " 
+f1=$f2 
+f2=$f3 
+i=`expr $i + 1` 
+done 
